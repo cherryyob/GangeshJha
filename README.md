@@ -1,29 +1,77 @@
-# GangeshJha
-Full-stack web application using React and Node.js with database integration. Complete MERN stack project with authentication, API, and responsive UI. End-to-end web solution combining frontend and backend technologies.
-<h1 align="center">Hi 👋, I'm Gangesh jha</h1>
-<h3 align="center">Aspiring MERN Stack Developer skilled in building full-stack web applications using MongoDB, Express, React, and Node.js</h3>
-
-- 🌱 I’m currently learning **Redux state management, backend APIs with Node.js, and building scalable full-stack applications**
-
-- 👯 I’m looking to collaborate on **Scalable MERN stack applications, especially using React, Redux, and Node.js.**
-
-- 🤝 I’m looking for help with **optimizing performance, scaling applications, and mastering advanced MERN stack concepts**
-
-- 💬 Ask me about **Scalable full-stack applications using React, Redux, Node.js, and Express.js.**
-
-- 📫 How to reach me **cherryyob@gmail.com**
-
-- ⚡ Fun fact **I turn coffee ☕ into code and ideas into real-world applications**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://dev.to/gangeshjha" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="gangeshjha" height="30" width="40" /></a>
-<a href="https://twitter.com/cherryyob" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="cherryyob" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/gangeshjha" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="gangeshjha" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/gangeshjha" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="gangeshjha" height="30" width="40" /></a>
-<a href="https://fb.com/gangeshjha" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="gangeshjha" height="30" width="40" /></a>
-<a href="https://instagram.com/gangeshjha" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="gangeshjha" height="30" width="40" /></a>
+<h1 align="center">Hi 👋, I'm Gangesh Jha</h1>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F7DF1E&center=true&vCenter=true&width=435&lines=Full-Stack+MERN+Developer;React+%26+Node.js+Specialist;Building+Scalable+Web+Solutions" alt="Typing SVG" />
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpueW9idHBlbm45bmV4bXN6Z3ZueW9idHBlbm45bmV4bXN6Z3ZueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" width="400" alt="Coding GIF">
+</p>
+
+---
+
+### 🚀 About Me
+I'm an aspiring **MERN Stack Developer** passionate about turning coffee ☕ into high-performance code. I specialize in building end-to-end applications with seamless user experiences and robust backends.
+
+* 🛠️ **Current Focus:** Mastering Redux state management and scalable Node.js architectures.
+* 🤝 **Collaboration:** Open to working on Open Source MERN projects or performance optimization.
+* 💬 **Ask me about:** React Hooks, Express middleware, or why I love JavaScript.
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer" width="100%"/>
+</p>
+
+---
+
+### 💻 Tech Stack
+<p align="left">
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+  <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" />
+  <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+  <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" />
+</p>
+
+---
+
+### 📊 GitHub Activity
+<p align="center">
+  <img height="170px" src="https://github-readme-stats-sigma-five.vercel.app/api?username=gangeshjha&show_icons=true&theme=vision-friendly-dark&border_radius=10" />
+  <img height="170px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=gangeshjha&layout=compact&theme=vision-friendly-dark&border_radius=10" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gangeshjha&theme=vision-friendly-dark&hide_border=false" />
+</p>
+
+---
+
+### 🎥 Project Showcase: MERN Social Platform
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueW9idHBlbm45bmV4bXN6Z3ZueW9idHBlbm45bmV4bXN6Z3ZueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKMGpxxcaOXYT60/giphy.gif" width="600" style="border-radius: 15px;" alt="Project Demo">
+</p>
+
+<details>
+  <summary><b>🛠️ View Architecture Details</b></summary>
+  <br>
+  
+  * **Frontend:** React.js with Tailwind CSS for rapid UI development.
+  * **Backend:** Node.js & Express with custom Middleware for Error Handling.
+  * **Database:** MongoDB Atlas with Mongoose modeling.
+  * **Auth:** Secure JWT-based authentication with cookie storage.
+</details>
+
+---
+
+### 🌐 Let's Connect
+<p align="left">
+<a href="https://linkedin.com/in/gangeshjha"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://twitter.com/cherryyob"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" /></a>
+<a href="https://dev.to/gangeshjha"><img src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white" /></a>
+<a href="mailto:cherryyob@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueW9idHBlbm45bmV4bXN6Z3ZueW9idHBlbm45bmV4bXN6Z3ZueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y3vD6v1Y8NfA0Lz1mS/giphy.gif" width="100%" height="2px" alt="Line Divider">
+</p>
