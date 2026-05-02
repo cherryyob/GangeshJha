@@ -14,8 +14,7 @@
 I'm an aspiring **MERN Stack Developer** passionate about building scalable and high-performance web applications.
 
 - 🔭 Currently working on real-world full-stack projects  
-- 🌱 Learning **Redux, scalable backend architecture & Docker**  
-- 🤝 Open to Open Source & collaboration  
+- 🌱 Learning **Redux, scalable backend architecture & Docker** - 🤝 Open to Open Source & collaboration  
 - 💬 Ask me about React, Node.js, Express, APIs  
 - 🎯 Goal: Become a top-tier full-stack engineer  
 
@@ -37,6 +36,7 @@ I'm an aspiring **MERN Stack Developer** passionate about building scalable and 
   <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
   <img src="https://img.shields.io/badge/express.js-404D59?style=for-the-badge" />
   <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/EJS-B4CA65?style=for-the-badge&logo=ejs&logoColor=black" />
 </p>
