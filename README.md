@@ -37,6 +37,7 @@ I'm an aspiring **MERN Stack Developer** passionate about building scalable and 
   <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
   <img src="https://img.shields.io/badge/express.js-404D59?style=for-the-badge" />
   <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/EJS-B4CA65?style=for-the-badge&logo=ejs&logoColor=black" />
 </p>
 
@@ -109,5 +110,5 @@ I can debug for hours… and sometimes the bug is just a typo 😄
 ---
 
 <p align="center">
-  ⚡ "Code. Learn. Build. Repeat."
+  ⚡ "Where Problems Become Products—and Products Make Profit."
 </p>
