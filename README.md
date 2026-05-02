@@ -23,8 +23,6 @@ I'm an aspiring **MERN Stack Developer** passionate about turning coffee ☕ int
 ---
 
 ### 💻 Tech Stack
-<p align="left">
- ### 💻 Tech Stack
 ### 💻 Tech Stack
 
 #### 🎨 Frontend Development
@@ -55,6 +53,7 @@ I'm an aspiring **MERN Stack Developer** passionate about turning coffee ☕ int
 #### 🧠 Languages
 <p align="left">
   <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" />
 </p>
 
@@ -62,21 +61,17 @@ I'm an aspiring **MERN Stack Developer** passionate about turning coffee ☕ int
 
 ### 🤝 Collaborate With Me
 I'm always open to collaborating on interesting projects!
-* 📧 **Email:** [Your Email Here]
-* 💼 **LinkedIn:** [Your LinkedIn Link Here]
+* 📧 **Email:** <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cherryyob@gmail.com">CHERRYYOB@GMAIL.COM</a>
+* 💼 **LinkedIn:** <a href="https://www.linkedin.com/in/gangesh-jha787?utm_source=share_via&utm_content=profile&utm_medium=member_android">Gangesh Jha</a>
 * ⚡ **Interested in:** Full-stack development, Open Source, and UI/UX improvements.
 </p>
 
 ---
 
-### 📊 GitHub Activity
-<p align="center">
-  <img height="170px" src="https://github-readme-stats-sigma-five.vercel.app/api?username=gangeshjha&show_icons=true&theme=vision-friendly-dark&border_radius=10" />
-  <img height="170px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=gangeshjha&layout=compact&theme=vision-friendly-dark&border_radius=10" />
-</p>
+## 📊 GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gangeshjha&theme=vision-friendly-dark&hide_border=false" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cherryyob&theme=radical&border_radius=10" alt="GitHub Streak" />
 </p>
 
 ---
@@ -95,6 +90,13 @@ I'm always open to collaborating on interesting projects!
   * **Database:** MongoDB Atlas with Mongoose modeling.
   * **Auth:** Secure JWT-based authentication with cookie storage.
 </details>
+
+---
+
+---
+
+## ⚡ Fun Fact
+I can debug for hours… and sometimes the bug is just a typo 😄
 
 ---
 
