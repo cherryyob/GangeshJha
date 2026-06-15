@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gangesh Jha — Full-Stack Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -71,32 +71,33 @@
 
     /* ── HERO ──────────────────────────────────────── */
     .hero {
-      min-height: 100vh; display: flex; align-items: center; justify-content: center;
-      padding: 7rem 2rem 5rem; position: relative; overflow: hidden;
+      min-height: 100vh; display: flex; align-items: center;
+      padding: 0; position: relative; overflow: hidden;
     }
-    .hero-blobs {
-      position: absolute; inset: 0; pointer-events: none;
+    /* Workspace bg image fills entire hero */
+    .hero-bg-img {
+      position: absolute; inset: 0; z-index: 0;
+      background: url('hero-bg.png') center center / cover no-repeat;
     }
-    .blob {
-      position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.18;
-      animation: blobFloat 8s ease-in-out infinite alternate;
+    .hero-bg-img::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(
+        100deg,
+        rgba(12,12,15,0.97) 0%,
+        rgba(12,12,15,0.88) 45%,
+        rgba(12,12,15,0.55) 70%,
+        rgba(12,12,15,0.2) 100%
+      );
     }
-    .blob-1 { width: 520px; height: 520px; background: var(--gold); top: -100px; right: -100px; animation-delay: 0s; }
-    .blob-2 { width: 400px; height: 400px; background: var(--coral); bottom: -80px; left: -60px; animation-delay: -3s; }
-    .blob-3 { width: 300px; height: 300px; background: var(--mint); top: 40%; left: 30%; animation-delay: -5s; opacity: 0.1; }
-    @keyframes blobFloat {
-      0%   { transform: translate(0, 0) scale(1); }
-      100% { transform: translate(30px, -40px) scale(1.08); }
+    /* Two-column hero layout */
+    .hero-inner {
+      position: relative; z-index: 1;
+      width: 100%; max-width: 1200px; margin: 0 auto;
+      padding: 8rem 3rem 5rem;
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 4rem; align-items: center;
     }
-
-    /* noise texture overlay */
-    .hero::after {
-      content: ''; position: absolute; inset: 0; pointer-events: none;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-      opacity: 0.35;
-    }
-
-    .hero-inner { position: relative; z-index: 1; max-width: 860px; text-align: left; }
+    .hero-content { max-width: 580px; }
     .hero-eyebrow {
       display: inline-flex; align-items: center; gap: 0.6rem;
       font-family: var(--mono); font-size: 0.75rem; color: var(--gold);
@@ -110,30 +111,75 @@
       0%,100% { opacity:1; transform:scale(1); }
       50% { opacity:0.4; transform:scale(0.6); }
     }
+    /* NAME: Playfair Display — elegant, serious, nothing weird */
     .hero h1 {
-      font-family: var(--display); font-size: clamp(3rem, 8vw, 6rem);
-      font-weight: 800; line-height: 1.15; letter-spacing: -0.03em;
-      margin-bottom: 1.5rem;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.6rem, 5.5vw, 4.5rem);
+      font-weight: 900; line-height: 1.1; letter-spacing: -0.01em;
+      margin-bottom: 1.4rem;
     }
-    .hero h1 .line { display: block; }
-    .hero h1 .name { display: inline-block;
-      background: linear-gradient(110deg, var(--gold) 0%, var(--gold2) 40%, var(--coral) 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; padding-bottom: 0.12em;
+    .hero h1 .greeting {
+      display: block;
+      font-family: var(--body); font-size: clamp(1rem, 2vw, 1.3rem);
+      font-weight: 300; color: var(--muted2); letter-spacing: 0.01em;
+      margin-bottom: 0.4rem;
+    }
+    .hero h1 .name {
+      display: inline-block;
+      background: linear-gradient(110deg, var(--gold) 0%, var(--gold2) 50%, var(--coral) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; padding-bottom: 0.1em;
     }
     .hero-role {
-      font-family: var(--mono); font-size: 0.9rem; color: var(--muted2);
+      font-family: var(--mono); font-size: 0.88rem; color: var(--muted2);
       margin-bottom: 1.25rem; letter-spacing: 0.04em;
     }
     .hero-role span { color: var(--gold); }
     .hero-sub {
-      font-size: 1.05rem; color: var(--muted2); max-width: 540px;
-      line-height: 1.8; margin-bottom: 2.5rem; font-weight: 300;
+      font-size: 1rem; color: var(--muted2);
+      line-height: 1.8; margin-bottom: 2rem; font-weight: 300;
     }
     .hero-location {
-      font-family: var(--mono); font-size: 0.78rem; color: var(--muted);
-      margin-bottom: 2.5rem; letter-spacing: 0.05em;
+      font-family: var(--mono); font-size: 0.75rem; color: var(--muted);
+      margin-bottom: 2.25rem; letter-spacing: 0.05em;
     }
     .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    /* Profile photo column */
+    .hero-photo-wrap {
+      position: relative; flex-shrink: 0;
+    }
+    .hero-photo-ring {
+      width: 260px; height: 320px; position: relative;
+    }
+    .hero-photo-ring::before {
+      content: ''; position: absolute; inset: -3px;
+      border-radius: 1.2rem;
+      background: linear-gradient(135deg, var(--gold), var(--coral), var(--mint));
+      z-index: 0;
+      animation: ringPulse 4s ease-in-out infinite alternate;
+    }
+    @keyframes ringPulse {
+      0%   { opacity: 0.7; }
+      100% { opacity: 1; filter: brightness(1.2); }
+    }
+    .hero-photo-ring img {
+      position: relative; z-index: 1;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center top;
+      border-radius: 1.1rem;
+      display: block;
+    }
+    /* floating badge on photo */
+    .hero-photo-badge {
+      position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%);
+      z-index: 2;
+      background: var(--card); border: 1px solid rgba(245,166,35,0.35);
+      border-radius: 2rem; padding: 0.4rem 1rem;
+      font-family: var(--mono); font-size: 0.68rem; color: var(--gold);
+      white-space: nowrap; letter-spacing: 0.08em;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    }
 
     /* buttons */
     .btn {
@@ -202,7 +248,32 @@
 
     /* ── ABOUT ──────────────────────────────────────── */
     #about { background: var(--surface); }
-    .about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: start; }
+    /* ── ABOUT PHOTO ───────────────────────────────── */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; }
+    .about-photo-col { position: relative; }
+    .about-photo-frame {
+      position: relative; border-radius: 1rem; overflow: hidden;
+      aspect-ratio: 4/5;
+    }
+    .about-photo-frame img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center top;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .about-photo-frame:hover img { transform: scale(1.04); }
+    .about-photo-frame::before {
+      content: ''; position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(180deg, transparent 60%, rgba(12,12,15,0.6) 100%);
+    }
+    .about-photo-accent {
+      position: absolute; top: -8px; right: -8px;
+      width: 60%; height: 60%; border-radius: 0.8rem;
+      border: 2px solid rgba(245,166,35,0.25);
+      pointer-events: none;
+    }
+    .about-right { display: flex; flex-direction: column; gap: 1.5rem; }
+
+
     .about-text p { color: var(--muted2); margin-bottom: 1.1rem; line-height: 1.85; font-size: 0.97rem; }
     .about-list { list-style: none; display: flex; flex-direction: column; gap: 0.85rem; }
     .about-list li {
@@ -487,14 +558,19 @@
 
     /* ── HERO ANIMATIONS ────────────────────────────── */
     @keyframes fadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
-    .hero-eyebrow { animation: fadeUp 0.7s ease both 0.1s; }
-    .hero h1      { animation: fadeUp 0.7s ease both 0.25s; }
-    .hero-role    { animation: fadeUp 0.7s ease both 0.4s; }
-    .hero-sub     { animation: fadeUp 0.7s ease both 0.5s; }
-    .hero-location{ animation: fadeUp 0.7s ease both 0.6s; }
-    .hero-btns    { animation: fadeUp 0.7s ease both 0.7s; }
+    .hero-eyebrow   { animation: fadeUp 0.7s ease both 0.1s; }
+    .hero h1        { animation: fadeUp 0.7s ease both 0.25s; }
+    .hero-role      { animation: fadeUp 0.7s ease both 0.4s; }
+    .hero-sub       { animation: fadeUp 0.7s ease both 0.5s; }
+    .hero-location  { animation: fadeUp 0.7s ease both 0.6s; }
+    .hero-btns      { animation: fadeUp 0.7s ease both 0.7s; }
+    .hero-photo-wrap{ animation: fadeUp 0.9s ease both 0.3s; }
 
     /* ── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; padding: 7rem 2rem 4rem; }
+      .hero-photo-wrap { display: none; }
+    }
     @media (max-width: 768px) {
       nav { padding: 1rem 1.25rem; }
       .nav-links { gap: 1rem; }
@@ -506,6 +582,7 @@
       .project-card { grid-template-columns: 1fr !important; direction: ltr !important; }
       .project-video-panel { min-height: 220px; }
       .project-info-panel { padding: 1.5rem 1.75rem; }
+      .about-photo-col { display: none; }
     }
     @media (max-width: 480px) {
       .nav-links { display: none; }
@@ -539,28 +616,34 @@
 
 <!-- ── HERO ── -->
 <section class="hero">
-  <div class="hero-blobs">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
+  <div class="hero-bg-img"></div>
   <div class="hero-inner">
-    <div class="hero-eyebrow">
-      <span class="dot"></span>
-      Available for freelance &amp; full-time
+    <!-- LEFT: text content -->
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="dot"></span>
+        Available for freelance &amp; full-time
+      </div>
+      <h1>
+        <span class="greeting">Hi, I'm</span>
+        <span class="name">Gangesh Jha</span>
+      </h1>
+      <div class="hero-role">
+        Full-Stack Developer &nbsp;·&nbsp; <span>MERN</span> &nbsp;·&nbsp; <span>TypeScript</span> &nbsp;·&nbsp; <span>AI/ML</span>
+      </div>
+      <p class="hero-sub">Results-driven developer with 3.5+ years building scalable, high-performance web applications — from clean React UIs to robust Node.js backends. Currently expanding into AI/ML.</p>
+      <div class="hero-location">📍 Bhilwara, Rajasthan &nbsp;|&nbsp; 📞 +91 7877217512</div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects ↗</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
     </div>
-    <h1>
-      <span class="line">Hi, I'm</span>
-      <span class="line name">Gangesh Jha</span>
-    </h1>
-    <div class="hero-role">
-      Full-Stack Developer &nbsp;·&nbsp; <span>MERN</span> &nbsp;·&nbsp; <span>TypeScript</span> &nbsp;·&nbsp; <span>AI/ML</span>
-    </div>
-    <p class="hero-sub">Results-driven developer with 3.5+ years building scalable, high-performance web applications — from clean React UIs to robust Node.js backends. Currently expanding into AI/ML.</p>
-    <div class="hero-location">📍 Bhilwara, Rajasthan &nbsp;|&nbsp; 📞 +91 7877217512</div>
-    <div class="hero-btns">
-      <a href="#projects" class="btn btn-primary">View Projects ↗</a>
-      <a href="#contact" class="btn btn-outline">Contact Me</a>
+    <!-- RIGHT: profile photo -->
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring">
+        <img src="profile.png" alt="Gangesh Jha — Full-Stack Developer" />
+      </div>
+      <div class="hero-photo-badge">✦ Open to Work</div>
     </div>
   </div>
 </section>
@@ -591,19 +674,29 @@
     <div class="section-eyebrow reveal">Who I Am</div>
     <h2 class="section-title reveal">About Me</h2>
     <div class="about-grid">
-      <div class="about-text reveal">
-        <p>I'm a results-driven Full-Stack Developer with 3.5+ years of hands-on experience in React.js and Node.js, and expertise across the MERN stack, TypeScript, and JavaScript.</p>
-        <p>I'm adept at architecting scalable, high-performance web applications from concept to deployment — with a strong focus on clean code, component reusability, and modern UI/UX principles.</p>
-        <p>Currently expanding my expertise into AI/ML to build intelligent, data-driven applications.</p>
+      <!-- Profile photo -->
+      <div class="about-photo-col reveal">
+        <div class="about-photo-frame">
+          <img src="profile.png" alt="Gangesh Jha" />
+        </div>
+        <div class="about-photo-accent"></div>
       </div>
-      <ul class="about-list reveal">
-        <li><span class="li-icon">⚡</span>Building RESTful APIs and implementing secure JWT authentication</li>
-        <li><span class="li-icon">⚡</span>Optimizing front-end delivery using Vite &amp; code splitting</li>
-        <li><span class="li-icon">⚡</span>Learning Python-based ML pipelines — NumPy, Pandas, Scikit-learn</li>
-        <li><span class="li-icon">⚡</span>Open to Open Source collaboration</li>
-        <li><span class="li-icon">⚡</span>Ask me about React, Node.js, Express, MongoDB, TypeScript</li>
-        <li><span class="li-icon">⚡</span>Goal: Build intelligent, full-stack AI-powered applications</li>
-      </ul>
+      <!-- Text + list -->
+      <div class="about-right">
+        <div class="about-text reveal">
+          <p>I'm a results-driven Full-Stack Developer with 3.5+ years of hands-on experience in React.js and Node.js, and expertise across the MERN stack, TypeScript, and JavaScript.</p>
+          <p>I'm adept at architecting scalable, high-performance web applications from concept to deployment — with a strong focus on clean code, component reusability, and modern UI/UX principles.</p>
+          <p>Currently expanding my expertise into AI/ML to build intelligent, data-driven applications.</p>
+        </div>
+        <ul class="about-list reveal">
+          <li><span class="li-icon">⚡</span>Building RESTful APIs and implementing secure JWT authentication</li>
+          <li><span class="li-icon">⚡</span>Optimizing front-end delivery using Vite &amp; code splitting</li>
+          <li><span class="li-icon">⚡</span>Learning Python-based ML pipelines — NumPy, Pandas, Scikit-learn</li>
+          <li><span class="li-icon">⚡</span>Open to Open Source collaboration</li>
+          <li><span class="li-icon">⚡</span>Ask me about React, Node.js, Express, MongoDB, TypeScript</li>
+          <li><span class="li-icon">⚡</span>Goal: Build intelligent, full-stack AI-powered applications</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
