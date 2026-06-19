@@ -492,6 +492,51 @@
       border: 1px solid var(--border); border-radius: 0.25rem; transition: all 0.2s;
     }
     .project-link:hover { color: var(--gold); border-color: rgba(245,166,35,0.4); background: rgba(245,166,35,0.05); }
+
+    /* ── LIVE LINK BADGE ── */
+    .project-link-live {
+      color: var(--mint); text-decoration: none; font-family: var(--mono);
+      font-size: 0.72rem; padding: 0.3rem 0.75rem 0.3rem 0.55rem;
+      border: 1px solid rgba(0,229,160,0.35); border-radius: 0.25rem;
+      background: rgba(0,229,160,0.06);
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.25s;
+    }
+    .project-link-live .live-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--mint);
+      box-shadow: 0 0 6px var(--mint);
+      animation: pulse 2s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    .project-link-live:hover {
+      color: #fff; border-color: rgba(0,229,160,0.7);
+      background: rgba(0,229,160,0.14);
+      box-shadow: 0 0 18px rgba(0,229,160,0.2);
+      transform: translateY(-1px);
+    }
+    .live-wrapper {
+      position: relative; display: inline-flex; align-items: center;
+    }
+    .live-tooltip {
+      position: absolute; bottom: calc(100% + 8px); left: 50%;
+      transform: translateX(-50%);
+      background: #1a1a24; border: 1px solid rgba(0,229,160,0.25);
+      color: var(--muted2); font-family: var(--mono); font-size: 0.62rem;
+      padding: 0.4rem 0.75rem; border-radius: 0.35rem;
+      white-space: nowrap; pointer-events: none;
+      opacity: 0; transition: opacity 0.2s ease;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      z-index: 10;
+    }
+    .live-tooltip::after {
+      content: ''; position: absolute; top: 100%; left: 50%;
+      transform: translateX(-50%);
+      border: 5px solid transparent;
+      border-top-color: rgba(0,229,160,0.25);
+    }
+    .live-wrapper:hover .live-tooltip { opacity: 1; }
+
     .project-title { font-family: var(--display); font-size: 1.2rem; font-weight: 700; line-height: 1.2; }
     .project-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
     .project-bullets li {
@@ -796,6 +841,12 @@
             <div class="project-icon">🏠</div>
             <div class="project-links">
               <a href="https://github.com/cherryyob/Zen-Stay-2.0" class="project-link" target="_blank">GitHub ↗</a>
+              <div class="live-wrapper">
+                <a href="https://stayyob-private-2.onrender.com/" class="project-link-live" target="_blank">
+                  <span class="live-dot"></span>Live
+                </a>
+                <span class="live-tooltip">⏳ May take ~30s to wake up (free server)</span>
+              </div>
             </div>
           </div>
           <div class="project-title">ZenStay V2<br>Vacation Rental Marketplace</div>
